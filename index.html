@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>동전 던지기</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>동전 던지기</h1>
+
+    <!-- 시작 화면 -->
+    <div id="start-screen">
+
+      <!-- 이름 먼저 -->
+      <input
+        type="text"
+        id="name"
+        placeholder="이름 입력"
+      />
+
+      <!-- 학번 아래 -->
+      <input
+        type="text"
+        id="studentId"
+        placeholder="학번 입력"
+      />
+
+      <!-- 앞뒤 선택 -->
+      <select id="choice">
+
+        <option value="">
+          앞/뒷면 선택
+        </option>
+
+        <option value="앞면">
+          앞면
+        </option>
+
+        <option value="뒷면">
+          뒷면
+        </option>
+
+      </select>
+
+      <button onclick="startGame()">
+        시작하기
+      </button>
+
+    </div>
+
+
+
+    <!-- 게임 화면 -->
+    <div id="game-screen">
+
+      <div id="coin">
+        🪙
+      </div>
+
+      <button onclick="flipCoin()">
+        동전 던지기
+      </button>
+
+      <h2 id="result-text"></h2>
+
+    </div>
+
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
