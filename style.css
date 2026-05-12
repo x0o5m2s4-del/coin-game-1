@@ -82,6 +82,14 @@ button {
 
 }
 
+#coin img {
+
+  width: 140px;
+
+  border-radius: 12px;
+
+}
+
 #result-text {
 
   margin-top: 25px;
