@@ -101,16 +101,16 @@ async function flipCoin() {
 
 
 
-  // 사진 결과 표시
+  // 결과 사진 표시
   if (result === "그림면") {
 
     coin.innerHTML =
-      '<img src="IMG_0607.jpeg" width="140">';
+      '<img src="IMG_0607.jpeg">';
 
   } else {
 
     coin.innerHTML =
-      '<img src="IMG_0608.jpeg" width="140">';
+      '<img src="IMG_0608.jpeg">';
 
   }
 
