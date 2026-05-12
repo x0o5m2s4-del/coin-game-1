@@ -81,12 +81,12 @@ async function flipCoin() {
   if (result === "그림면") {
 
     coin.innerHTML =
-      '<img src="IMG_0604.jpeg" width="140">';
+      '<img src="IMG_0607.jpeg" width="140">';
 
   } else {
 
     coin.innerHTML =
-      '<img src="IMG_0605.jpeg" width="140">';
+      '<img src="IMG_0608.jpeg" width="140">';
 
   }
 
