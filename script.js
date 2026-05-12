@@ -22,7 +22,7 @@ let selectedChoice = "";
 
 
 
-function startGame() {
+async function startGame() {
 
   const name =
     document.getElementById("name").value.trim();
@@ -38,6 +38,30 @@ function startGame() {
   if (!name || !studentId || !choice) {
 
     alert("이름, 학번, 선택을 모두 입력해줘!");
+
+    return;
+
+  }
+
+
+
+  // 중복 참여 검사
+  const snapshot =
+    await db.collection("coinGame")
+
+    .where(
+      "studentId",
+      "==",
+      studentId
+    )
+
+    .get();
+
+
+
+  if (!snapshot.empty) {
+
+    alert("이미 참여한 학생이야!");
 
     return;
 
