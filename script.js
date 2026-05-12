@@ -67,8 +67,8 @@ async function flipCoin() {
 
   const result =
     Math.random() < 0.5
-      ? "앞면"
-      : "뒷면";
+      ? "그림면"
+      : "숫자면";
 
 
 
@@ -78,7 +78,7 @@ async function flipCoin() {
 
 
   // 사진 결과 표시
-  if (result === "앞면") {
+  if (result === "그림면") {
 
     coin.innerHTML =
       '<img src="IMG_0601.jpeg" width="140">';
