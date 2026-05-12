@@ -49,13 +49,13 @@ function startGame() {
 
 
 
-  // 시작화면 숨기기
+  // 시작 화면 숨기기
   document.getElementById("start-screen")
     .style.display = "none";
 
 
 
-  // 게임화면 보이기
+  // 게임 화면 보이기
   document.getElementById("game-screen")
     .style.display = "block";
 
@@ -77,14 +77,16 @@ async function flipCoin() {
 
 
 
-  // 동전 결과 표시
+  // 사진 결과 표시
   if (result === "앞면") {
 
-    coin.textContent = "🙂";
+    coin.innerHTML =
+      '<img src="IMG_0601.jpeg" width="140">';
 
   } else {
 
-    coin.textContent = "🦁";
+    coin.innerHTML =
+      '<img src="back.jpeg" width="140">';
 
   }
 
